@@ -1,5 +1,3 @@
-# solbiler 
-
-# af Frederik Barbre
+# Solbiler - Frederik Barbre
 
 https://www.solbiler.frederikbarbre.dk
