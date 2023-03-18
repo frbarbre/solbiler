@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <title>Lej en bil | Solbiler ApS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="js/cursor.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/solbiler-dark-fav.svg" type="image/x-icon">
+</head>
+
+<body class="wrapper" onload="calenderRefresh()">
+    <div class="cursor"></div>
+    <header>
+        <nav>
+            <a href="forside.html">Solbiler.</a>
+            <ul>
+                <li><a href="om-os.html">Find os</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="inner-wrapper">
+        <section class="form-wrapper">
+            <form id="formular" class="formular" action="" method="">
+                <div class="formular_felter">
+                    <div>
+                        <label for="afhentning" class="etiket">Afhentning</label>
+                        <input class="form-input date-picker" type="date" id="afhentning" required>
+                    </div>
+
+                    <div>
+                        <label for="aflevering" class="etiket">Aflevering</label>
+                        <input class="form-input date-picker" type="date" id="aflevering" required>
+                    </div>
+
+                    <div>
+                        <label for="personer" class="etiket">Personer</label>
+                        <select class="form-input" id="personer" required>
+                            <option value="1">1 prs.</option>
+                            <option value="2">2 prs.</option>
+                            <option value="3">3 prs.</option>
+                            <option value="4">4 prs.</option>
+                            <option value="5">5 prs.</option>
+                            <option value="6">6 prs.</option>
+                            <option value="7">7 prs.</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="kufferter" class="etiket">Kufferter</label>
+                        <select class="form-input" id="kufferter">
+                            <option value="0">0 stk.</option>
+                            <option value="1">1 stk.</option>
+                            <option value="2">2 stk.</option>
+                            <option value="3">3 stk.</option>
+                            <option value="4">4 stk.</option>
+                            <option value="5">5 stk.</option>
+                        </select>
+                    </div>
+
+                    <div class="formular_knap">
+                        <button id="knap" class="knap" type="submit">Søg</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="bil_sektion" id="bil_sektion"></section>
+
+        <div class="logo-wrapper">
+            <img class="waiting-logo" src="img/solbiler-dark-fav.svg" alt="Solbiler-logo">
+        </div>
+
+        <template id="skabelon_output">
+            <div class="bil">
+                <div class="img-container">
+                    <div class="gradient"></div>
+                    <div class="img-wrapper"></div>
+                </div>
+                <div class="bilMM"></div>
+                <div class="bildetaljer">
+                    <div class="beskrivelse"></div>
+                    <div class="bil-spec-wrapper">
+                        <div class="bil-spec">
+                            <img src="img/bag-icon.svg" alt="luggage-icon">
+                            <div class="antalkufferter"></div>
+                        </div>
+                        <div class="bil-spec">
+                            <img src="img/car-icon.svg" alt="car-icon">
+                            <div class="kategori"></div>
+                        </div>
+                        <div class="bil-spec">
+                            <img src="img/person-icon.svg" alt="person-icon">
+                            <div class="antalpersoner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prisogbook">
+                    <div class="lejeudgift"></div>
+                    <div class="std-btn">
+                        <a href="#" class="booknu_knap">Book nu</a>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+
+</html>

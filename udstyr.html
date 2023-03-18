@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Valg af udstyr | Solbiler ApS</title>
+    <script src="js/cursor.js" defer></script>
+    <link rel="shortcut icon" href="img/solbiler-dark-fav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wrapper">
+    <div class="cursor"></div>
+    <header>
+        <nav>
+            <a href="forside.html">Solbiler.</a>
+            <ul>
+                <li><a href="om-os.html">Find os</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="inner-wrapper wrapper-margin">
+        <div class="hovedindhold">
+            <div class="content-wrapper">
+                <aside id="lejeoplysninger" class="lejeoplysninger">
+                    <h2>Din bestilling</h2>
+                </aside>
+                <section class="udstyrssektion">
+                    <h1>Ekstraudstyr</h1>
+                    <form class="formular" id="formular" action="kunde.html">
+                        <div class="flexsektion">
+                            <label class="ios-label"><div>Ekstra chauffør</div><div><p>kr. 199,00</p><input type="checkbox" data-udstyr="Ekstra chauffør" class="checkboks" value="199.00"></div></label>
+                            <label class="ios-label"><div>Barnesæde (5-12)</div><div><p>kr. 155,00</p><input type="checkbox" data-udstyr="Barnesæde (5-12 år)" class="checkboks" value="155.00"></div></label>
+                            <label class="ios-label"><div>Vejhjælp+</div><div><p>kr. 120,00</p><input type="checkbox" class="checkboks" data-udstyr="Vejhjælp+" value="120.00"></div></label>
+                            <label class="ios-label"><div>Lift-net (0-1)</div><div><p>kr. 100,00</p><input type="checkbox" class="checkboks" data-udstyr="Lift-net (0-1 år)" value="100.00"></div></label>
+                            <label class="ios-label"><div>Barnesæde (1-4)</div><div><p>kr. 140,00</p><input type="checkbox" data-udstyr="Barnesæde (1-4 år)" class="checkboks" value="140.00"></div></label>
+                            <label class="ios-label"><div>GPS</div><div><p>kr. 250,00</p><input type="checkbox" data-udstyr="GPS navigation" class="checkboks" value="250.00"></div></label>
+                            <label class="ios-label"><div>Snekæder</div><div><p>kr. 188,00</p><input type="checkbox" data-udstyr="Snekæder" class="checkboks" value="188.00"></div></label>                      
+                        </div>
+                        <div class="formular_knap btn-padding">
+                            <button>Forsæt</button>
+                        </div>  
+                    </form>
+                </section>
+            </div>
+            <article id="totaldkk" class="totaldkk">
+                <p>Total:</p>
+                <div id="totalindhold" class="totalindhold">ALT INKLUSIV:</div>
+            </article>
+        </div>
+    </div>
+    <script src="js/udstyr.js"></script>
+</body></html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Dine oplysninger | Solbiler ApS</title>
+    <script src="js/cursor.js" defer></script>
+    <link rel="shortcut icon" href="img/solbiler-dark-fav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="wrapper">
+    <div class="cursor"></div>
+    <header>
+        <nav>
+            <a href="forside.html">Solbiler.</a>
+            <ul>
+                <li><a href="om-os.html">Find os</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="inner-wrapper wrapper-margin">
+    <div class="hovedindhold">
+        <div class="content-wrapper">
+            <section class="oplysningssektion">
+                <h1 class="overskrift">Dine oplysninger</h1>
+                <form class="formular" id="formular">
+                    <div class="flexsektion-kunde">
+                        <div><label>Fornavn</label><input type="text" id="fornavn" class="formfelt" tabindex="1" required></div>
+                        <div><label>Efternavn</label><input type="text" id="efternavn" class="formfelt" tabindex="2" required></div>
+                        <div><label>Vejnavn</label><input type="text" id="vejnavn" class="formfelt" tabindex="3" required></div>
+                        <div><label>Nr./etage</label><input type="text" id="vejnr" class="formfelt" tabindex="4" required></div>
+                        <div><label>Postnummer og By</label><input type="text" list="pbliste" id="postnr" class="formfelt" tabindex="5" required></div>
+                        <div><label><input type="checkbox" class="checkboks" tabindex="6" required><p class="age-check">Jeg er fyldt 18 år</p></label></div>
+                    </div>
+                    <div class="formular_knap">
+                        <button type="submit" class="videreknap" id="videreknap" tabindex="7">Book nu</button>
+                    </div>
+                </form>
+            </section>
+    
+            <datalist id="pbliste"></datalist>
+              
+            <aside id="lejeoplysninger" class="lejeoplysninger-total">
+                <h2>Lejeoplysninger</h2>
+            </aside>
+        </div>
+        <div class="totaldkk">
+            <p>Total:</p>
+            <div id="totalindhold" class="totalindhold"></div>
+        </div>
+    </div>
+    </div>
+    <script src="js/kunde.js"></script>
+</body></html>
